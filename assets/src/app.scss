@@ -3,6 +3,7 @@
 @import 'core/variables';
 @import 'core/themes';
 
+@import 'components/theme-switcher';
 @import 'components/board';
 @import 'components/tiles';
 
@@ -14,4 +15,6 @@ body {
 	justify-content: center;
 	font-family: 'Roboto', sans-serif;
 	background-color: #f6f6f6;
+	position: relative;
 }
+

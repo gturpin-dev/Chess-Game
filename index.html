@@ -7,7 +7,11 @@
 	<link rel="stylesheet" href="./assets/dist/app.css">
 	<title>Chess Game</title>
 </head>
-<body class="theme--modern">
+<body data-theme='classic'>
+	<div class="themes">
+		<a class="theme" data-theme="classic">Classic</a>
+		<a class="theme" data-theme="modern">Modern</a>
+	</div>
 	<div class="board">
 		<div class="board__inner">
 			<div class="board__inner--row">
@@ -33,6 +37,7 @@
 		</div>
 	</div>
 
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 	<script src="./assets/dist/app.js"></script>
 </body>
 </html>

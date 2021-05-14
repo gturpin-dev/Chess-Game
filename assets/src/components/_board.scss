@@ -1,4 +1,6 @@
 .board {
+	padding: $box_size;
+	margin: $box_size;
 	border: 2px solid brown;
 
 	&__inner {
@@ -6,6 +8,7 @@
 		display: grid;
 		grid-template-columns: repeat(8, $box_size);
 		grid-template-rows: repeat(8, $box_size);
+		border: 2px solid brown;
 
 		&--row {
 			position: absolute;

@@ -80,4 +80,17 @@ function createBoard() {
 	}
 }
 
+// Appels
 createBoard()
+
+function changeTheme() {
+	let currentTheme = $('body').attr('data-theme')
+	let targetTheme = $(this).attr('data-theme')
+
+	if (currentTheme !== targetTheme) {
+		$('body').attr('data-theme', targetTheme)
+	}
+}
+
+$(document).on('click', '.theme', changeTheme)
+
