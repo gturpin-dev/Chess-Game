@@ -134,10 +134,6 @@ function Piece(type, col, row, team) {
 	this.draw = () => {
 		let $tile = $(".tile[data-row=" + this.row + "][data-col=" + this.col + "]")
 		$tile.css('backgroundImage', "url('" + this.imageName + "')")
-		$tile.css('backgroundSize', '60px')
-		$tile.css('backgroundRepeat', 'no-repeat')
-		$tile.css('backgroundPosition', 'center center')
-
 		$tile.attr('data-piece', this.id)
 	}
 	this.type = type

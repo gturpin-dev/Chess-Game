@@ -203,6 +203,9 @@ address {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  background-size: 68px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .tile:after {
@@ -219,6 +222,11 @@ address {
   color: #4b7399;
 }
 
+[data-theme=standard] .tile--light {
+  background-color: #eeeed2;
+  color: #769656;
+}
+
 [data-theme=classic] .tile--dark {
   background-color: #000;
   color: #fff;
@@ -227,6 +235,11 @@ address {
 [data-theme=modern] .tile--dark {
   background-color: #4b7399;
   color: #eae9d2;
+}
+
+[data-theme=standard] .tile--dark {
+  background-color: #769656;
+  color: #eeeed2;
 }
 
 body {

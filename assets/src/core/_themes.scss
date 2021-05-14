@@ -7,6 +7,10 @@ $themes: (
 		'color-light': #eae9d2,
 		'color-dark': #4b7399
 	),
+	'standard': (
+		'color-light': #eeeed2,
+		'color-dark': #769656
+	),
 );
 
 @mixin themed() {

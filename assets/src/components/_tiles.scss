@@ -1,6 +1,9 @@
 .tile {
 	display: flex;
 	align-items: flex-end;
+	background-size: .85 * $box_size;
+	background-repeat: no-repeat;
+	background-position: center center;
 
 	&:after {
 		content: attr(data-col) attr(data-row);
