@@ -1,0 +1,102 @@
+/// Modern Css Reset
+/// ============================
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	outline: none;
+}
+
+/* Remove default padding */
+ul,
+ol {
+	padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	word-break: break-word;
+}
+
+html {
+	margin-top: 0 !important;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	overflow-x: hidden;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+	list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* A elements that have a class get default styles */
+a {
+	text-decoration: none;
+}
+
+/* Make images easier to work with */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+// Remove italic from address 
+address {
+	font-style: normal;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}

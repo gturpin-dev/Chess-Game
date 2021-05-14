@@ -1,0 +1,75 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$white: #fff;
+$black: #000;
+$box_size: 75px;
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(245, 245, 245);
+}
+
+.board {
+	border: 2px solid brown;
+
+	&__inner {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(8, $box_size);
+		grid-template-rows: repeat(8, $box_size);
+
+		&--row {
+			position: absolute;
+			right: 100%;
+			bottom: 0;
+			display: flex;
+			flex-flow: column-reverse;
+
+			> * {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: $box_size;
+				height: $box_size;
+			}
+		}
+
+		&--col {
+			position: absolute;
+			bottom: 100%;
+			left: 0;
+			display: flex;
+
+			> * {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: $box_size;
+				height: $box_size;
+			}
+		}
+	}
+}
+
+.box {
+	display: flex;
+	align-items: flex-end;
+
+	&:after {
+		content: attr(data-col) attr(data-row);
+	}
+
+	&--white {
+		background-color: $white;
+		color: $black;
+	}
+
+	&--black {
+		background-color: $black;
+		color: $white;
+	}
+}
