@@ -1,3 +1,11 @@
+// Active le theme au chargement de la page
+(function() {
+	let theme = localStorage.getItem("theme") || "";
+	if (theme !== "") {
+		$('body').attr('data-theme', theme)
+	}
+})();
+
 const ROWS = [ 8, 7, 6, 5, 4, 3, 2, 1]
 const COLS = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' ]
 
@@ -80,17 +88,19 @@ function createBoard() {
 	}
 }
 
-// Appels
+/// Appels
+/// ============================
 createBoard()
 
+/// Theme switcher
+/// ============================
 function changeTheme() {
 	let currentTheme = $('body').attr('data-theme')
 	let targetTheme = $(this).attr('data-theme')
 
 	if (currentTheme !== targetTheme) {
 		$('body').attr('data-theme', targetTheme)
+		localStorage.setItem("theme", targetTheme)
 	}
 }
-
 $(document).on('click', '.theme', changeTheme)
-
