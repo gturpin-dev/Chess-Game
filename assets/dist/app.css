@@ -102,20 +102,6 @@ address {
   }
 }
 
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Roboto', sans-serif;
-  background-color: whitesmoke;
-}
-
 .board {
   border: 2px solid brown;
 }
@@ -180,7 +166,7 @@ body {
   height: 75px;
 }
 
-.box {
+.tile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,17 +175,41 @@ body {
           align-items: flex-end;
 }
 
-.box:after {
+.tile:after {
   content: attr(data-col) attr(data-row);
 }
 
-.box--white {
+.theme--classic .tile--light {
   background-color: #fff;
   color: #000;
 }
 
-.box--black {
+.theme--modern .tile--light {
+  background-color: #eae9d2;
+  color: #4b7399;
+}
+
+.theme--classic .tile--dark {
   background-color: #000;
   color: #fff;
+}
+
+.theme--modern .tile--dark {
+  background-color: #4b7399;
+  color: #eae9d2;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f6f6f6;
 }
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,22 @@
+.tile {
+	display: flex;
+	align-items: flex-end;
+
+	&:after {
+		content: attr(data-col) attr(data-row);
+	}
+
+	&--light {
+		@include themed() {
+			background-color: t('color-light');
+			color: t('color-dark');
+		}
+	}
+
+	&--dark {
+		@include themed() {
+			background-color: t('color-dark');
+			color: t('color-light');
+		}
+	}
+}

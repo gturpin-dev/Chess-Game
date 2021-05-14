@@ -44,31 +44,31 @@ function createBoard() {
 	let lineChangeCount = 1 // compteur de changement de ligne
 	
 	for (let i = 1; i <= 64; i++) {
-		let box = document.createElement('div') // Case
-		box.classList.add('box')
-		box.setAttribute('data-index', i)
-		box.setAttribute('data-row', getRow(i))
-		box.setAttribute('data-col', getCol(i))
+		let tile = document.createElement('div') // Case
+		tile.classList.add('tile')
+		tile.setAttribute('data-index', i)
+		tile.setAttribute('data-row', getRow(i))
+		tile.setAttribute('data-col', getCol(i))
 	
 		// Ajout des cases sur les lignes impairs
 		if (oddLine == true) {
 			if (i % 2 == 0) { // les cases pairs sont noires
-				box.classList.add('box--black')
+				tile.classList.add('tile--dark')
 			} else {
-				box.classList.add('box--white')
+				tile.classList.add('tile--light')
 			}
 
 		// Ajout des cases sur les lignes impairs
 		} else {
 			if (i % 2 == 0) { // les cases pairs sont blanches
-				box.classList.add('box--white')
+				tile.classList.add('tile--light')
 			} else {
-				box.classList.add('box--black')
+				tile.classList.add('tile--dark')
 			}
 		}
 	
 		// Ajout de la case
-		board.appendChild(box)
+		board.appendChild(tile)
 	
 		lineChangeCount++
 

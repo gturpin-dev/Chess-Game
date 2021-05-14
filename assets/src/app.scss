@@ -1,0 +1,17 @@
+@import 'core/reset';
+@import 'core/mixins';
+@import 'core/variables';
+@import 'core/themes';
+
+@import 'components/board';
+@import 'components/tiles';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	background-color: #f6f6f6;
+}
