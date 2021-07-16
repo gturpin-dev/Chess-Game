@@ -1,13 +1,13 @@
 .board {
-	padding: $box_size;
+	padding: $tile_size;
 	margin: 1em;
 	border: 2px solid brown;
 
 	&__inner {
 		position: relative;
 		display: grid;
-		grid-template-columns: repeat(8, $box_size);
-		grid-template-rows: repeat(8, $box_size);
+		grid-template-columns: repeat(8, $tile_size);
+		grid-template-rows: repeat(8, $tile_size);
 		border: 2px solid brown;
 
 		&--row {
@@ -21,8 +21,8 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				width: $box_size;
-				height: $box_size;
+				width: $tile_size;
+				height: $tile_size;
 			}
 		}
 
@@ -36,8 +36,8 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				width: $box_size;
-				height: $box_size;
+				width: $tile_size;
+				height: $tile_size;
 			}
 		}
 	}

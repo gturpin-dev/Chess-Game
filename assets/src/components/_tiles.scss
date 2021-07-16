@@ -1,12 +1,15 @@
 .tile {
 	display: flex;
 	align-items: flex-end;
-	background-size: .85 * $box_size;
+	background-size: .9 * $tile_size;
 	background-repeat: no-repeat;
 	background-position: center center;
 
 	&:after {
 		content: attr(data-col) attr(data-row);
+		font-size: .875em;
+		margin-left: 2px;
+		margin-bottom: -2px;
 	}
 
 	&--light {

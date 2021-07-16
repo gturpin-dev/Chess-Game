@@ -114,7 +114,6 @@ function changeTheme() {
 }
 $(document).on('click', '.theme', changeTheme)
 
-
 /**
  * Constructeur de pièce
  * @param {*} type Nom de la pièce | {knight, rook, bishop, pawn, queen, king}

@@ -130,7 +130,7 @@ address {
 }
 
 .board {
-  padding: 80px;
+  padding: 85px;
   margin: 1em;
   border: 2px solid brown;
 }
@@ -139,10 +139,10 @@ address {
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (80px)[8];
-      grid-template-columns: repeat(8, 80px);
-  -ms-grid-rows: (80px)[8];
-      grid-template-rows: repeat(8, 80px);
+  -ms-grid-columns: (85px)[8];
+      grid-template-columns: repeat(8, 85px);
+  -ms-grid-rows: (85px)[8];
+      grid-template-rows: repeat(8, 85px);
   border: 2px solid brown;
 }
 
@@ -169,8 +169,8 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80px;
-  height: 80px;
+  width: 85px;
+  height: 85px;
 }
 
 .board__inner--col {
@@ -192,8 +192,8 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80px;
-  height: 80px;
+  width: 85px;
+  height: 85px;
 }
 
 .tile {
@@ -203,13 +203,16 @@ address {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  background-size: 68px;
+  background-size: 76.5px;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .tile:after {
   content: attr(data-col) attr(data-row);
+  font-size: .875em;
+  margin-left: 2px;
+  margin-bottom: -2px;
 }
 
 [data-theme=classic] .tile--light {
